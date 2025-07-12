@@ -1,5 +1,5 @@
 # Use Bun official image
-FROM node:24-slim
+FROM node:22-alpine
 
 # Set working directory
 WORKDIR /app
