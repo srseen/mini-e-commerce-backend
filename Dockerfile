@@ -1,17 +1,11 @@
-# base image
 FROM node:20-alpine
 
-# Set working directory
 WORKDIR /app
 
-# copy package.json and package-lock.json
-COPY package.json ./
-
-# Install dependencies
+COPY package*.json ./
 RUN npm install
 
-# Copy source code
 COPY . .
 
-# Start the application in development mode
+EXPOSE 3000
 CMD ["npm", "run", "start:dev"]
