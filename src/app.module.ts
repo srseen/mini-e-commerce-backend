@@ -9,6 +9,7 @@ import { CategoriesModule } from './modules/categories/categories.module';
 import { OrdersModule } from './modules/orders/orders.module';
 import { CouponsModule } from './modules/coupons/coupons.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { UsersModule } from './modules/users/users.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     OrdersModule,
     CouponsModule,
     DashboardModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

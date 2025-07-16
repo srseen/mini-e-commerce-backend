@@ -35,6 +35,9 @@ export class User {
   })
   role: string;
 
+  @Prop({ default: true })
+  isActive: boolean;
+
   @Prop({ type: ShippingAddress })
   shippingAddress: ShippingAddress;
 }
